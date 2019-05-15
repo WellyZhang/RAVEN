@@ -41,6 +41,7 @@ ANGLE_VALUES = [-135, -90, -45, 0, 45, 90, 135, 180]
 ANGLE_MIN = 0
 ANGLE_MAX = len(ANGLE_VALUES) - 1
 
+META_TARGET_FORMAT = ["Constant", "Progression", "Arithmetic", "Distribute_Three", "Number", "Position", "Type", "Size", "Color"]
 META_STRUCTURE_FORMAT = ["Singleton", "Left_Right", "Up_Down", "Out_In", "Left", "Right", "Up", "Down", "Out", "In", "Grid", "Center_Single", "Distribute_Four", "Distribute_Nine", "Left_Center_Single", "Right_Center_Single", "Up_Center_Single", "Down_Center_Single", "Out_Center_Single", "In_Center_Single", "In_Distribute_Four"]
 
 # Rule, Attr, Param
