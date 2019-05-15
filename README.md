@@ -57,7 +57,9 @@ See ```requirements.txt``` for a full list of packages required.
 
 Code to generate the dataset resides in the ```src/dataset``` folder. To generate a dataset, run
 
-```python src/dataset/main.py --num-samples <number of samples per configuration> --save-dir <directory to save the dataset>```
+```
+python src/dataset/main.py --num-samples <number of samples per configuration> --save-dir <directory to save the dataset>
+```
 
 Check the ```main.py``` file for a full list of arguments you can adjust.
 
@@ -65,7 +67,9 @@ Check the ```main.py``` file for a full list of arguments you can adjust.
 
 Code to benchmark the dataset resides in ```src/model```. To run the code, first put the ```assets/embedding.npy``` in the dataset folder as specified in the ```src/model/utility/dataset_utility.py```. Then run
 
-```python src/model/main.py --model <model name> --path <path to the dataset>```
+```
+python src/model/main.py --model <model name> --path <path to the dataset>
+```
 
 You can check the ```main.py``` file for a full list of arguments. This repo only supports ```Resnet18_MLP```, ```CNN_MLP```, and ```CNN_LSTM```. For WReN, please check the implementation in [the WReN repo](https://github.com/Fen9/WReN).
 
