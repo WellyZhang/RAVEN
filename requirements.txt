@@ -5,3 +5,5 @@ pillow
 scikit-image
 opencv-contrib-python
 tqdm
+torch
+torchvision
