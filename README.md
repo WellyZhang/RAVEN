@@ -21,7 +21,7 @@ The grammatical design makes the dataset flexible and extendable. In total, we c
 
 ![configurations](http://wellyzhang.github.io/img/in-post/RAVEN/peek_view.png)
 
-To download the dataset, please check [our project page](http://wellyzhang.github.io/project/raven.html).
+The dataset formatting document is in ```assets/README.md```. To download the dataset, please check [our project page](http://wellyzhang.github.io/project/raven.html).
 
 # Performance
 
