@@ -62,9 +62,9 @@ Each xml file contains the following:
 
 * Context panels and choice panels: each Panel could be further decomposed into Struct, Component, Layout, and Entity.
   * Each layer comes with its name and id if necessary.
-  * Layout has its own attributes, whose values are indices into the value set (see also ```src/dataset/const.py```), except Position. Position is a list of slots one entity could occupy, denoted by center and width/height. 
-  * Entity's attributes follow the same annotation. The bbox is retrieved from the Position array in its parent Layout and the real_bbox is the actual bounding box, denoted by center and width/height. The mask encoded using the run-length encoding. To decode it, use the ```rle_decode``` function in ```src/dataset/api.py```.
+  * Layout has its own attributes, whose values are indices into the value set (see also ```src/dataset/const.py```), except Position. Position is a list of slots entities could occupy, denoted by center and width/height. 
+  * Entity's attributes follow the same annotation. The bbox is retrieved from the Position array in its parent Layout and the real_bbox is the actual bounding box, denoted by center and width/height. The mask is encoded using the run-length encoding. To decode it, use the ```rle_decode``` function in ```src/dataset/api.py```.
 * Rules: rules are divided into groups, each of which applies to the corresponding component with the same id number. 
-  * ```attr``` is ```Number/Position``` when the rule is ```Constant``` as these two attributes are deeply coupled.
+  * ```attr``` could be ```Number/Position``` when the rule is ```Constant``` as these two attributes are deeply coupled.
   * When there is a rule on ```Number``` or ```Position```, we omit the rule on the other attribute, as it should be assumed **as is**, *i.e.*, following the rule on the other (could remain unchanged).
   * Therefore, each rule group has 4 rules.
