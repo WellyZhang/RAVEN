@@ -65,7 +65,7 @@ Check the ```main.py``` file for a full list of arguments you can adjust.
 
 ## Benchmarking
 
-Code to benchmark the dataset resides in ```src/model```. To run the code, first put the ```assets/embedding.npy``` in the dataset folder as specified in the ```src/model/utility/dataset_utility.py```. Then run
+Code to benchmark the dataset resides in ```src/model```. To run the code, first put ```assets/embedding.npy``` in the dataset folder as specified in the ```src/model/utility/dataset_utility.py```. Then run
 
 ```
 python src/model/main.py --model <model name> --path <path to the dataset>
