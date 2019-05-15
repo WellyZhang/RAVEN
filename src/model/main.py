@@ -23,7 +23,6 @@ parser.add_argument('--load_workers', type=int, default=16)
 parser.add_argument('--resume', type=bool, default=False)
 parser.add_argument('--path', type=str, default='/home/chizhang/Datasets/RAVEN-10000/')
 parser.add_argument('--save', type=str, default='./experiments/checkpoint/')
-parser.add_argument('--log', type=str, default='./experiments/log/')
 parser.add_argument('--img_size', type=int, default=224)
 parser.add_argument('--lr', type=float, default=1e-4)
 parser.add_argument('--beta1', type=float, default=0.9)
@@ -41,8 +40,6 @@ if args.cuda:
 
 if not os.path.exists(args.save):
     os.makedirs(args.save)
-if not os.path.exists(args.log):
-    os.makedirs(args.log)
 
 train = dataset(args.path, "train", args.img_size, transform=transforms.Compose([ToTensor()]))
 valid = dataset(args.path, "val", args.img_size, transform=transforms.Compose([ToTensor()]))
