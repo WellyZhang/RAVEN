@@ -25,7 +25,7 @@ The dataset formatting document is in ```assets/README.md```. To download the da
 
 # Performance
 
-We list the performance of models on the following table. For details, please check our [paper](http://wellyzhang.github.io/attach/cvpr19zhang.pdf).
+We show performance of models in the following table. For details, please check our [paper](http://wellyzhang.github.io/attach/cvpr19zhang.pdf).
 
 
 | Method     | Acc        | Center     | 2x2Grid    | 3x3Grid    | L-R        | U-D        | O-IC       | O-IG       |

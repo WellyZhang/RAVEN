@@ -27,6 +27,8 @@ up_center_single_down_center_single/
     ...
 ```
 
+Note that each npz file comes with an xml file.
+
 These 7 folders correspond to the 7 figure configurations in the paper. Specifically,
 
 * Center = center_single
@@ -39,9 +41,9 @@ These 7 folders correspond to the 7 figure configurations in the paper. Specific
 
 ## Naming
 
-You might notice that the actual naming in this dataset is slightly different from what's reported in our paper. This is mostly due to the fact that things like **2x2** or **3x3** do not have corresponding word vectors. They are now **distribute_four** and **distribute_nine**. To make the paper concise, we also remove certain adjectives. **Center** becomes **Center_Single** and sometimes comes with a component name. 
+You might notice that the actual naming in this dataset is slightly different from what's reported in our paper. This is mostly due to the fact that things like **2x2** or **3x3** do not have corresponding word vectors. They are now **distribute_four** and **distribute_nine**. To make the paper concise, we also remove certain adjectives. **Center** was **Center_Single** and sometimes came with a component name. 
 
-As depicted in the paper, embeddings for each of them are obtained from pre-trained GloVe vectors and held fixed during training.
+As described in the paper, embeddings for each of them are obtained from pre-trained GloVe vectors and held fixed during training.
 
 ## NPZ file
 
