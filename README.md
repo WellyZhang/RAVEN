@@ -90,6 +90,6 @@ If you find the paper and/or the code helpful, please cite us.
 
 # Acknowledgement
 
-We'd like to express our gratitude towards all the colleagues and anonymous reviewers for helping us improve the paper. The project is impossible to finish with out the following open-source implementation.
+We'd like to express our gratitude towards all the colleagues and anonymous reviewers for helping us improve the paper. The project is impossible to finish without the following open-source implementation.
 
 * [Wild Relational Network](https://github.com/Fen9/WReN)
