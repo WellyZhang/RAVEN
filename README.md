@@ -45,6 +45,7 @@ We show performance of models in the following table. For details, please check 
 # Dependencies
 
 **Important**
+* Python 2.7
 * OpenCV
 * PyTorch
 * CUDA and cuDNN expected
