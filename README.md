@@ -82,8 +82,8 @@ If you find the paper and/or the code helpful, please cite us.
 
 ```
 @inproceedings{zhang2019raven, 
-    author={Zhang, Chi and Gao, Feng and Jia, Baoxiong and Zhu, Yixin and Zhu, Song-Chun}, 
     title={RAVEN: A Dataset for Relational and Analogical Visual rEasoNing}, 
+    author={Zhang, Chi and Gao, Feng and Jia, Baoxiong and Zhu, Yixin and Zhu, Song-Chun}, 
     booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
     year={2019}
 }
