@@ -93,4 +93,4 @@ If you find the paper and/or the code helpful, please cite us.
 
 We'd like to express our gratitude towards all the colleagues and anonymous reviewers for helping us improve the paper. The project is impossible to finish without the following open-source implementation.
 
-* [Wild Relational Network](https://github.com/Fen9/WReN)
+* [WReN](https://github.com/Fen9/WReN)
