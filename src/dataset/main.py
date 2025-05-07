@@ -155,7 +155,7 @@ def fuse(args, all_configs):
             f.write(dom)
         if target == predicted:
             acc += 1
-    print "Accuracy: {}".format(float(acc) / (args.num_samples * len(all_configs)))
+    print("Accuracy: {}".format(float(acc) / (args.num_samples * len(all_configs))))
 
 
 def separate(args, all_configs):
@@ -280,11 +280,11 @@ def separate(args, all_configs):
                                                                                       meta_structure=meta_structure)
             with open("{}/{}/RAVEN_{}_{}.xml".format(args.save_dir, key, k, set_name), "w") as f:
                 dom = dom_problem(context + candidates, rule_groups)
-                f.write(dom)
+                f.write(dom.decode("utf-8"))
             
             if target == predicted:
                 acc += 1
-        print "Accuracy of {}: {}".format(key, float(acc) / args.num_samples)
+        print ("Accuracy of {}: {}".format(key, float(acc) / args.num_samples))
 
 
 def main():

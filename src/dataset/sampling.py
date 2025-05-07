@@ -2,7 +2,7 @@
 
 
 import numpy as np
-from scipy.misc import comb
+from scipy.special import comb
 
 from const import MAX_COMPONENTS, RULE_ATTR
 from Rule import Rule_Wrapper
@@ -47,7 +47,7 @@ def sample_attr_avail(rule_groups, row_3_3):
             num_times = 0
             min_level = start_node_layout.orig_layout_constraint["Number"][0]
             max_level = start_node_layout.orig_layout_constraint["Number"][1]
-            for k in range(min_level, max_level + 1):
+            for k in range(int(min_level), int(max_level) + 1):
                 if k + 1 != num:
                     num_times += comb(most_num, k + 1)
             if num_times > 0:
@@ -57,7 +57,7 @@ def sample_attr_avail(rule_groups, row_3_3):
             num_times = 0
             min_level = start_node_layout.orig_layout_constraint["Number"][0]
             max_level = start_node_layout.orig_layout_constraint["Number"][1]
-            for k in range(min_level, max_level + 1):
+            for k in range(int(min_level), int(max_level) + 1):
                 if k + 1 != num:
                     num_times += comb(most_num, k + 1)
             if num_times > 0:

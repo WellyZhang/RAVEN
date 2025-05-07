@@ -4,7 +4,7 @@
 import copy
 
 import numpy as np
-from scipy.misc import comb
+from scipy.special import comb
 
 from Attribute import Angle, Color, Number, Position, Size, Type, Uniformity
 from constraints import rule_constraint
